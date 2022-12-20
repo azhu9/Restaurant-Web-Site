@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 :root {
   --purple: #691783;
   --cyan: #127979;
@@ -12,7 +12,7 @@ body {
   margin: 0px;
   background-color: var(--purple);
   color: white;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Abel', sans-serif;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -23,12 +23,17 @@ body {
   background-color: white;
   color: var(--cyan);
   margin: 0;
-  padding-bottom: 20px;
 }
 
 a{
    text-decoration: none;
    color: white;
+}
+
+hr{
+  width: 80%;
+  opacity: 70%;
+  margin: 20px;
 }
 
 #description{
@@ -38,15 +43,15 @@ a{
 
 #logo{
     display: block;
-    margin-left: 0px;
+    padding: 15px;
     float: left;
-
 }
 
 #title{
   display: relative;
   text-align: center;
   margin: auto;
+  font-size: 50px;
 }
 
 .button{
@@ -139,4 +144,10 @@ hr{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+p {
+  margin-left: 3%;
+  margin-right: 3%;
+  text-align: justify;
 }
