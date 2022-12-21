@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Dlicious Dishes</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -14,51 +14,67 @@
 
     <h1 id="title">D-licious Dishes</h1>
     <div class="navbar">
-      <a class="drop-item" href="index.html">Home</a>
-      <a class="drop-item" href="#">Reviews</a>
+      <a class="drop-item home-btn" href="#review-anchor">Home</a>
+      <a class="drop-item" href="index.html">Reviews</a>
       <a class="drop-item" href="menu.html">Menu</a>
       <div class="dropdown">
-        <button class="drop-item dropbtn">Order Online 
-          <!-- <i class="fa fa-caret-down"></i> --></button>
+        <button class="drop-item dropbtn">Order Online</button>
         <div class="dropdown-content">
-          <a href="https://www.doordash.com/store/d-licious-dishes-south-amboy-2558769/?utm_campaign=gpa"  target=”_blank”>DoorDash</a>
-          <a href="https://www.ubereats.com/store/d-licious-dishes/M0UUlVUxQTSVnShkCmT8-A?utm_campaign=place-action-link&utm_medium=organic&utm_source=google"  target=”_blank”>UberEats</a>
-          <a href="">ASAP</a>
-          <a href="https://postmates.com/store/d-licious-dishes/M0UUlVUxQTSVnShkCmT8-A?utm_campaign=place-action-link&utm_medium=organic&utm_source=google"  target=”_blank”>Postmates</a>
+          <a href="https://www.doordash.com/store/d-licious-dishes-south-amboy-2558769/?utm_campaign=gpa" target="_blank">DoorDash</a>
+          <a href="https://www.ubereats.com/store/d-licious-dishes/M0UUlVUxQTSVnShkCmT8-A?utm_campaign=place-action-link&utm_medium=organic&utm_source=google" target="_blank">UberEats</a>
+          <a href="https://asap.com/restaurants/nj/south-amboy/d-licious-dishes-6250-nj-35/34999" target="_blank">ASAP</a>
+          <a href="https://postmates.com/store/d-licious-dishes/M0UUlVUxQTSVnShkCmT8-A?utm_campaign=place-action-link&utm_medium=organic&utm_source=google" target="_blank">Postmates</a>
         </div>
       </div> 
     </div>
-    <!-- <img src="img/Transparent 200x175px Image.png"> -->
   </div>
 
 <center>
-  <div>
+  <hr id="span-hr">
+  <img id="wings" src="img/Wings.jpg" width="35%">
     <h2>About Us</h2>
-  </div>
   <div>
     <p id="description">
-    <p>D-Licious Dishes is one of the cleanest, homeliest, and freshest little Diners for dine-in, take-out or delivery,
+      D-Licious Dishes is one of the cleanest, homeliest, and freshest little Diners for dine-in, take-out or delivery,
       in Sayreville, NJ. We opened our doors in May of 2021 and have since become known as the Birthplace of the
       Legendary "Honey Garlic Wings"! We pride ourselves in cleaning, seasoning our chicken to the bone, then frying it
       up nice and hard, just like you like it!
-
     We're all about good food, good vibes and a good time, so if you're looking for either, stop by!
     We'd love to meet you in person, but if you can't make it, you can always avail our take-out, delivery and catering
     options. Hope to see you soon!
     </p>
+    <h2>Business Hours</h2>
+    <h3>Monday through Thursday from 4-8PM</h3>
+    <h3>Friday and Saturday from 4-10PM</h3>
+    <h3>Closed Sunday and Tuesday</h3>
+    <h2>Interested in Working?</h2>
+    <button class="contact">Click to Contact Us!</button>
   </div>
   <script src="script.js"></script>
   <hr>
   <h2>
-    Reviews!
+    Reviews
   </h2>
-  <div class="subtitle">
-    Our reviews are our trusted customers!
-  </div>
-  <div>
-    <p>Feel free to review on Yelp, DoorDash, and Uber Eats! </p>
-  </div>
   </center>
+    <div class="review-container" style="display: flex; height: 700px;">
+      <div id="left-div" style="width: 40%;">
+          <img id="staff-img" src="img/staff.jpg">
+      </div>
+      <div id="right-div" style="flex-grow: 1;">
+          Right Div
+      </div>
+  </div>
+    <!-- <p>Our reviews are our trusted customers!</p>
+    <p>Feel free to review on Yelp, DoorDash, and Uber Eats! </p> -->
+  <center>
+  <hr>
+  <div class="map-container">
+    <h2>Our Location</h2>
+    <h3>6250 NJ-35, South Amboy, New Jersey</h3> 
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.4205168703975!2d-74.29964568436444!3d40.48808325922022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cbb5ca43d3a1%3A0x8aaa0411dac88f81!2sD-Licious%20Dishes%20LLC!5e0!3m2!1sen!2sus!4v1671565323704!5m2!1sen!2sus" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+</div>
+<footer id="last-modified"></footer>
+</center>
 </body>
 
 </html>
