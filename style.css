@@ -45,10 +45,22 @@ a{
 #title{
   display: relative;
   position: relative;
-  left: 60px;
+  left: 220px;
   text-align: center;
   margin: auto;
   font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title-class{
+  display: relative;
+  position: relative;
+  left: 70px;
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .button{
@@ -120,6 +132,7 @@ hr{
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: var(--purple);
+  transition: 0.5s;
 }
 
 .dropdown-content {
@@ -165,9 +178,6 @@ h1{
   font-family: 'Playfair Display', serif;
 }
 
-#wings{
-  padding: 50px;
-}
 
 .home-btn{
   border-bottom-left-radius: 20px;
@@ -184,15 +194,21 @@ h1{
   /* border-radius: 20px; */
 }
 
+.contact:hover{
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
 .menu, .map-container{
-  background-color: var(--pink);
+  background-color: var(--purple);
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .menu{
-  padding: 70px;
+  padding: 40px;
 
 }
 
@@ -225,4 +241,17 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.map-container{
+  color: white;
+}
+
+.review-child{
+  position: relative;
+
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  height: 100px;
 }
