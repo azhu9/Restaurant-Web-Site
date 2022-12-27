@@ -6,6 +6,10 @@
   --pink: #ffd0dd;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -32,8 +36,11 @@ a{
 
 
 #description{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 #logo{
@@ -49,13 +56,13 @@ a{
   text-align: center;
   margin: auto;
   font-size: 50px;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 .title-class{
   display: relative;
   position: relative;
-  left: 70px;
+  left: 90px;
   text-align: center;
   margin: auto;
   font-size: 50px;
@@ -161,12 +168,6 @@ hr{
   display: block;
 }
 
-#description{
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 20px;
-}
-
 h2{
   font-size: 40px;
   font-family: 'Playfair Display', serif;
@@ -254,4 +255,11 @@ h1{
   margin: 10px;
   border-radius: 20px;
   height: 100px;
+}
+.review-title{
+  padding: 10px;
+}
+
+iframe{
+  width: 70%;
 }
