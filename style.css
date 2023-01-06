@@ -239,9 +239,6 @@ h1{
 
 #staff-img{
   width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .map-container{
@@ -262,4 +259,55 @@ h1{
 
 iframe{
   width: 70%;
+}
+
+#left-contact-div{
+  margin-left: 10%;
+  border-style: solid;
+  border-color: var(--cyan);
+
+}
+
+#right-contact-div{
+  margin-right: 10%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 20px;
+}
+
+.contact-container{
+  background-color: tan;
+  margin-top: 2%;
+}
+
+#contact-subtitle, #contact-description, #staff-img{
+  display: flex;
+  justify-content: center;
+}
+
+.short-input{
+  font-family: 'Abel', sans-serif;
+  width: 150px;
+}
+
+.long-input{
+  font-family: 'Abel', sans-serif;
+  width: 300px;
+}
+
+/* #container-child{
+  display: flex;
+  flex-direction: row;
+} */
+
+#submit-button{
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+  font-family: 'Playfair Display', serif;
+  background-color: var(--cyan);
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+
 }

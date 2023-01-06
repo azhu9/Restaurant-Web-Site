@@ -15,7 +15,7 @@
     <h1 class="title-class">D-licious Dishes</h1>
     <div class="navbar">
       <a class="drop-item home-btn" href="index.html">Home</a>
-      <a class="drop-item" href="index.html/#reviews">Reviews</a>
+      <a class="drop-item" href="index.html#reviews">Reviews</a>
       <a class="drop-item" href="contact.html">Contact Us</a>
       <a class="drop-item" href="menu.html">Menu</a>
       <div class="dropdown">
@@ -29,12 +29,32 @@
       </div> 
     </div>
   </div>
-  <center>
-
+    
+    <div class="contact-container" style="display: flex; height: 700px;">
+      <div id="left-contact-div" style="width: 40%;">
+        <h2 id="contact-subtitle">Contact Us</h2>
+        <h3 id="contact-description">some stufffff</h3>
+        <img id="staff-img" src="img/staff.jpg">
+      </div>
+      <div id="right-contact-div" style="flex-grow: 1;">
+          <div class="contact-child">
+            <div id="name-container">
+              <h3>First Name</h3>
+              <input id="first-input" class="long-input" type="text">
+              <h3>Last Name</h3>
+              <input id="last-input" class="long-input" type="text">
+            </div>
+            <h3>Email</h3>
+            <input id="email-input" class="long-input" type="text">
+            <h3>Resume Link</h3>
+            <input id="resume-input" class="long-input" type="text">
+          </div>
+          <button id="submit-button">Submit</button>
+      </div>
+  </div>
   <footer>
     <!-- Last Updated on: December 20th, 2022 -->
     </footer>
-  </center>
   <script src="script.js"></script>
 
 </body>
