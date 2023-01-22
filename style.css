@@ -24,9 +24,10 @@ body {
 .header-container{
   display: flex;
   justify-content: center;
-  background-color: white;
+/*   background-color: white; */
   color: var(--cyan);
   margin: 0;
+  
 }
 
 a{
@@ -43,13 +44,11 @@ a{
   margin-right: 4%;
 }
 
-#logo{
-    display: block;
-    padding: 15px;
-    float: left;
-}
+/* #logo{
+  float: left
+} */
 
-#title{
+/* #title{
   display: relative;
   position: relative;
   left: 220px;
@@ -58,8 +57,9 @@ a{
   font-size: 50px;
   padding-top: 50px;
   padding-bottom: 20px;
-}
-.title-class{
+  z-index: 0;
+} */
+/* .title-class{
   display: relative;
   position: relative;
   left: 90px;
@@ -68,6 +68,16 @@ a{
   font-size: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+} */
+
+.header-container{
+  position: relative;
+}
+
+#logo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .button{
@@ -76,6 +86,7 @@ a{
   height: 50px;
   border-width: 2px;
   border-radius: 6px;
+  z-index: 2;
 }
 
 footer{
@@ -95,15 +106,15 @@ hr{
   color: var(--cyan);
 }
 
-.header-nav{
+/* .header-nav{
   margin-left: auto;
   margin-right: 5%;
   font-size: 20px;
-}
+} */
 
 .navbar {
   overflow: hidden;
-  background-color: white;
+  z-index: 2;
 }
 
 .navbar a {
@@ -118,10 +129,15 @@ hr{
 .dropdown {
   float: left;
   overflow: hidden;
-
+  z-index: 2;
 }
 .drop-item{
   background-color: var(--cyan);
+  z-index: 2;
+}
+
+.dropbtn{
+  border-bottom-right-radius: 20px;
 }
 
 .dropdown .dropbtn {
@@ -134,12 +150,13 @@ hr{
   font-family: inherit;
   margin: 0;
   background-color: var(--cyan);
-  
+  z-index: 2;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: var(--purple);
   transition: 0.5s;
+  z-index: 2;
 }
 
 .dropdown-content {
@@ -237,8 +254,13 @@ h1{
   border-bottom-right-radius: 20px;
 }
 
+#reviews-link{
+  margin: 10px;
+}
+
 #staff-img{
   width: 40%;
+    margin: auto;
 }
 
 .map-container{
@@ -251,8 +273,10 @@ h1{
   background-color: white;
   margin: 10px;
   border-radius: 20px;
-  height: 100px;
+  padding: 4px;
+/*   height: 100px; */
 }
+
 .review-title{
   padding: 10px;
 }
@@ -265,7 +289,10 @@ iframe{
   margin-left: 10%;
   border-style: solid;
   border-color: var(--cyan);
-
+  color: white;
+  margin: 50px;
+  border-width: 6px;
+  border-radius: 2%;
 }
 
 #right-contact-div{
@@ -273,16 +300,20 @@ iframe{
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: 20px;
+  color: white;
 }
 
+
 .contact-container{
-  background-color: tan;
-  margin-top: 2%;
+  background-color: var(--purple);
+  border-radius: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 #contact-subtitle, #contact-description, #staff-img{
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .short-input{
@@ -292,7 +323,7 @@ iframe{
 
 .long-input{
   font-family: 'Abel', sans-serif;
-  width: 300px;
+  width: 40%;
 }
 
 /* #container-child{
@@ -311,3 +342,14 @@ iframe{
   border-radius: 10px;
 
 }
+
+/* @media screen and (max-width: 850px){
+  .home-btn{
+  border-bottom-left-radius: 10px;
+  }
+  .dropbtn{
+    border-bottom-right-radius: 10px;
+  }
+  #dd-logo{
+  }
+} */
