@@ -256,6 +256,8 @@ h1{
 
 #reviews-link{
   margin: 10px;
+  text-decoration-line: underline;
+  
 }
 
 #staff-img{
@@ -309,9 +311,10 @@ iframe{
   border-radius: 2%;
   margin-left: 2%;
   margin-right: 2%;
+  height: 100px;
 }
 
-#contact-subtitle, #contact-description, #staff-img{
+.contact-subtitle, .contact-description, #staff-img{
   display: flex;
   justify-content: center; 
 }
